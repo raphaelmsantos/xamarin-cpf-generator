@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:CpfGenerator"
+             x:Class="CpfGenerator.MainPage">
+
+    
+
+    <StackLayout>
+        <Label Text="CPF Generator" FontSize="30" FontAttributes="Bold"/>
+        <Button Text="Generate new CPF" TextColor="White"
+                        BackgroundColor="#77D065" Clicked="GenerateCpf"
+            
+                        />
+        <Label Text="Generated cpfs" FontSize="20" FontAttributes="Bold"/>
+        <ListView x:Name="CpfList">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" 
+                        HorizontalOptions="FillAndExpand"
+                        Margin="20, 10, 20, 0" >
+                            <Label Text="{Binding Id}" HorizontalOptions="StartAndExpand" />
+                            <Label Text="{Binding GeneratedNumber}" />
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+
+
+</ContentPage>

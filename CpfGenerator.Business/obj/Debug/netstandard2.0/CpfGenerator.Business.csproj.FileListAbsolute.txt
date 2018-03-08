@@ -1,0 +1,9 @@
+D:\Projects\IGTI\CpfGenerator\CpfGenerator.Business\bin\Debug\netstandard2.0\CpfGenerator.Business.deps.json
+D:\Projects\IGTI\CpfGenerator\CpfGenerator.Business\bin\Debug\netstandard2.0\CpfGenerator.Business.dll
+D:\Projects\IGTI\CpfGenerator\CpfGenerator.Business\bin\Debug\netstandard2.0\CpfGenerator.Business.pdb
+D:\Projects\IGTI\CpfGenerator\CpfGenerator.Business\obj\Debug\netstandard2.0\CpfGenerator.Business.csprojResolveAssemblyReference.cache
+D:\Projects\IGTI\CpfGenerator\CpfGenerator.Business\obj\Debug\netstandard2.0\CpfGenerator.Business.csproj.CoreCompileInputs.cache
+D:\Projects\IGTI\CpfGenerator\CpfGenerator.Business\obj\Debug\netstandard2.0\CpfGenerator.Business.AssemblyInfoInputs.cache
+D:\Projects\IGTI\CpfGenerator\CpfGenerator.Business\obj\Debug\netstandard2.0\CpfGenerator.Business.AssemblyInfo.cs
+D:\Projects\IGTI\CpfGenerator\CpfGenerator.Business\obj\Debug\netstandard2.0\CpfGenerator.Business.dll
+D:\Projects\IGTI\CpfGenerator\CpfGenerator.Business\obj\Debug\netstandard2.0\CpfGenerator.Business.pdb
