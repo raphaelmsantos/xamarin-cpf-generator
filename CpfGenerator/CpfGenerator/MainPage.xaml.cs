@@ -51,10 +51,30 @@ namespace CpfGenerator
 
             CrossClipboard.Current.SetText(cpf.GeneratedNumber);
 
-            await DisplayAlert("Alert", "Copied to Clipboard", "OK");
+            await DisplayAlert("Alert", "Copied to Clipboard!", "OK");
 
             await Db.Save(cpf);
             CpfList.ItemsSource = await Db.GetAll();
+        }
+
+        protected async void DeleteAll(object sender, EventArgs e)
+        {
+            await Db.DeleteAll();
+            CpfList.ItemsSource = await Db.GetAll();
+
+            await DisplayAlert("Alert", "Success!", "OK");
+        }
+
+        protected void OnSelection(object sender, SelectedItemChangedEventArgs e)
+        {
+            if (e.SelectedItem == null)
+            {
+                return; //ItemSelected is called on deselection, which results in SelectedItem being set to null
+            }
+
+            CrossClipboard.Current.SetText(e.SelectedItem.ToString());
+
+            DisplayAlert("Alert", "Copied to Clipboard!", "OK");
         }
 
     }

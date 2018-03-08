@@ -10,5 +10,10 @@ namespace CpfGenerator.Entities
         [PrimaryKey, AutoIncrement]
         public int Id { get; set; }
         public string GeneratedNumber { get; set; }
+
+        public override string ToString()
+        {
+            return GeneratedNumber;
+        }
     }
 }

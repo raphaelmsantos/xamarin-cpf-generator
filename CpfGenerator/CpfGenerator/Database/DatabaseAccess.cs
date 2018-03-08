@@ -33,7 +33,7 @@ namespace CpfGenerator.Database
         
         public Task<List<Cpf>> GetAll()
         {
-            return db.Table<Cpf>().ToListAsync();
+            return db.Table<Cpf>().OrderByDescending(x=> x.Id).ToListAsync();
         }
 
         public Task<Cpf> GetById(int id)

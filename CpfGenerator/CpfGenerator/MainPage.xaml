@@ -7,25 +7,31 @@
     
 
     <StackLayout>
-        <Label Text="CPF Generator" FontSize="30" FontAttributes="Bold"/>
+        <Label Text="CPF Generator" FontSize="30" FontAttributes="Bold" Margin="10"/>
         <Button Text="Generate new CPF" TextColor="White"
                         BackgroundColor="#77D065" Clicked="GenerateCpf"
-            
+            Margin="10"
                         />
-        <Label Text="Generated cpfs" FontSize="20" FontAttributes="Bold"/>
-        <ListView x:Name="CpfList">
+        <Button Text="Delete All" TextColor="White"
+                        BackgroundColor="#FF000" Clicked="DeleteAll"
+            Margin="10"
+                        />
+        <Label Text="Generated cpfs" FontSize="20" FontAttributes="Bold" Margin="10"/>
+        <ListView x:Name="CpfList" Margin="10" ItemSelected="OnSelection">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
                         <StackLayout Orientation="Horizontal" 
                         HorizontalOptions="FillAndExpand"
-                        Margin="20, 10, 20, 0" >
+                        Margin="20, 10, 20, 0">
                             <Label Text="{Binding Id}" HorizontalOptions="StartAndExpand" />
                             <Label Text="{Binding GeneratedNumber}" />
                         </StackLayout>
                     </ViewCell>
+                    
                 </DataTemplate>
             </ListView.ItemTemplate>
+            
         </ListView>
     </StackLayout>
 
